@@ -16,5 +16,36 @@ namespace pryIEFISignorileBautista
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (dtpFecha.Value >= DateTime.Today) 
+            {
+                MessageBox.Show("Vamos a registrar su producto");
+
+                int n = dtgvCargarVentas.Rows.Add();
+
+                dtgvCargarVentas.Rows[n].Cells[0].Value = txtCantidad.Text;
+                dtgvCargarVentas.Rows[n].Cells[1].Value = txtProduto.Text;
+                dtgvCargarVentas.Rows[n].Cells[2].Value = dtpFecha.Text;
+            }
+            else
+            {
+                MessageBox.Show("Ingrese una fecha actual o superior")
+;                dtpFecha.Value = DateTime.Today;
+                dtpFecha.Focus();
+            }
+
+        }
     }
 }
