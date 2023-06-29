@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistros));
             this.mrcCargarProducto = new System.Windows.Forms.GroupBox();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.lblID = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.txtNombreProducto = new System.Windows.Forms.TextBox();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
@@ -41,8 +43,6 @@
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha_de_Registro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnVolver = new System.Windows.Forms.Button();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.lblID = new System.Windows.Forms.Label();
             this.mrcCargarProducto.SuspendLayout();
             this.mrcListadoDeProducto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRegistro)).BeginInit();
@@ -63,6 +63,23 @@
             this.mrcCargarProducto.TabIndex = 0;
             this.mrcCargarProducto.TabStop = false;
             this.mrcCargarProducto.Text = "Carga de Producto";
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(7, 34);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(200, 20);
+            this.txtID.TabIndex = 5;
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.Location = new System.Drawing.Point(6, 16);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(21, 13);
+            this.lblID.TabIndex = 4;
+            this.lblID.Text = "ID:";
             // 
             // btnGuardar
             // 
@@ -143,6 +160,7 @@
             this.dtgvRegistro.RowHeadersVisible = false;
             this.dtgvRegistro.Size = new System.Drawing.Size(420, 136);
             this.dtgvRegistro.TabIndex = 0;
+            this.dtgvRegistro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvRegistro_CellContentClick);
             // 
             // ID
             // 
@@ -170,23 +188,6 @@
             this.btnVolver.Text = "VOLVER";
             this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(7, 34);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(200, 20);
-            this.txtID.TabIndex = 5;
-            // 
-            // lblID
-            // 
-            this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(6, 16);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(21, 13);
-            this.lblID.TabIndex = 4;
-            this.lblID.Text = "ID:";
             // 
             // frmRegistros
             // 

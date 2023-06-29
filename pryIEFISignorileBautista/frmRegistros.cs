@@ -47,5 +47,10 @@ namespace pryIEFISignorileBautista
         {
 
         }
+
+        private void dtgvRegistro_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
