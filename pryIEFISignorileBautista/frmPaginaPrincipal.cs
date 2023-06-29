@@ -19,7 +19,7 @@ namespace pryIEFISignorileBautista
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form Productos = new frmProductos();
+            Form Productos = new frmRegistros();
             Productos.Show();
         }
 

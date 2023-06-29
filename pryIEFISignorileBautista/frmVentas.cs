@@ -35,9 +35,10 @@ namespace pryIEFISignorileBautista
 
                 int n = dtgvCargarVentas.Rows.Add();
 
-                dtgvCargarVentas.Rows[n].Cells[0].Value = txtCantidad.Text;
-                dtgvCargarVentas.Rows[n].Cells[1].Value = txtProduto.Text;
-                dtgvCargarVentas.Rows[n].Cells[2].Value = dtpFecha.Text;
+                dtgvCargarVentas.Rows[n].Cells[0].Value = txtID.Text;
+                dtgvCargarVentas.Rows[n].Cells[1].Value = txtCantidad.Text;
+                dtgvCargarVentas.Rows[n].Cells[2].Value = txtProduto.Text;
+                dtgvCargarVentas.Rows[n].Cells[3].Value = dtpFecha.Text;
             }
             else
             {
@@ -45,6 +46,11 @@ namespace pryIEFISignorileBautista
 ;                dtpFecha.Value = DateTime.Today;
                 dtpFecha.Focus();
             }
+
+        }
+
+        private void dtgvCargarVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

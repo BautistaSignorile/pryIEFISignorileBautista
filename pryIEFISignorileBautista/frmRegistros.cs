@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryIEFISignorileBautista
 {
-    public partial class frmProductos : Form
+    public partial class frmRegistros : Form
     {
-        public frmProductos()
+        public frmRegistros()
         {
             InitializeComponent();
         }
@@ -24,15 +24,13 @@ namespace pryIEFISignorileBautista
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string Varid = "0";
             if (dtpFecha.Value >= DateTime.Today)
             {
                 MessageBox.Show("Vamos a registrar su producto");
-                string contador = Varid + 1;
 
                 int n = dtgvRegistro.Rows.Add();
                  
-                dtgvRegistro.Rows[n].Cells[0].Value = contador;
+                dtgvRegistro.Rows[n].Cells[0].Value = txtID.Text;
                 dtgvRegistro.Rows[n].Cells[1].Value = txtNombreProducto.Text;
                 dtgvRegistro.Rows[n].Cells[2].Value = dtpFecha.Text;
 
@@ -43,6 +41,11 @@ namespace pryIEFISignorileBautista
                 dtpFecha.Value = DateTime.Today;
                 dtpFecha.Focus();
             }
+        }
+
+       private void frmRegistros_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

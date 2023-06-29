@@ -29,56 +29,56 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPaginaPrincipal));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picVentaLogo = new System.Windows.Forms.PictureBox();
+            this.lblVentaLogo = new System.Windows.Forms.Label();
+            this.btnRegistro = new System.Windows.Forms.Button();
+            this.btnVentas = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.picVentaLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // picVentaLogo
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(218, 143);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.picVentaLogo.Image = ((System.Drawing.Image)(resources.GetObject("picVentaLogo.Image")));
+            this.picVentaLogo.Location = new System.Drawing.Point(12, 12);
+            this.picVentaLogo.Name = "picVentaLogo";
+            this.picVentaLogo.Size = new System.Drawing.Size(218, 143);
+            this.picVentaLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picVentaLogo.TabIndex = 0;
+            this.picVentaLogo.TabStop = false;
             // 
-            // label1
+            // lblVentaLogo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Mistral", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(71, 158);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 42);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "VENTAS";
+            this.lblVentaLogo.AutoSize = true;
+            this.lblVentaLogo.Font = new System.Drawing.Font("Mistral", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVentaLogo.Location = new System.Drawing.Point(71, 158);
+            this.lblVentaLogo.Name = "lblVentaLogo";
+            this.lblVentaLogo.Size = new System.Drawing.Size(109, 42);
+            this.lblVentaLogo.TabIndex = 1;
+            this.lblVentaLogo.Text = "VENTAS";
             // 
-            // button1
+            // btnRegistro
             // 
-            this.button1.BackColor = System.Drawing.Color.Goldenrod;
-            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 232);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "PRODUCTOS";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnRegistro.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnRegistro.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistro.Location = new System.Drawing.Point(12, 232);
+            this.btnRegistro.Name = "btnRegistro";
+            this.btnRegistro.Size = new System.Drawing.Size(83, 23);
+            this.btnRegistro.TabIndex = 2;
+            this.btnRegistro.Text = "REGISTRO";
+            this.btnRegistro.UseVisualStyleBackColor = false;
+            this.btnRegistro.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnVentas
             // 
-            this.button2.BackColor = System.Drawing.Color.Goldenrod;
-            this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(146, 232);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "VENTAS";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnVentas.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnVentas.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVentas.Location = new System.Drawing.Point(146, 232);
+            this.btnVentas.Name = "btnVentas";
+            this.btnVentas.Size = new System.Drawing.Size(75, 23);
+            this.btnVentas.TabIndex = 3;
+            this.btnVentas.Text = "VENTAS";
+            this.btnVentas.UseVisualStyleBackColor = false;
+            this.btnVentas.Click += new System.EventHandler(this.button2_Click);
             // 
             // frmPaginaPrincipal
             // 
@@ -86,16 +86,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.ClientSize = new System.Drawing.Size(244, 283);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnVentas);
+            this.Controls.Add(this.btnRegistro);
+            this.Controls.Add(this.lblVentaLogo);
+            this.Controls.Add(this.picVentaLogo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmPaginaPrincipal";
             this.Text = "Ventas";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVentaLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,10 +103,10 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox picVentaLogo;
+        private System.Windows.Forms.Label lblVentaLogo;
+        private System.Windows.Forms.Button btnRegistro;
+        private System.Windows.Forms.Button btnVentas;
     }
 }
 
