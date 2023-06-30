@@ -95,6 +95,7 @@
             this.MinimizeBox = false;
             this.Name = "frmPaginaPrincipal";
             this.Text = "Ventas";
+            this.Load += new System.EventHandler(this.frmPaginaPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picVentaLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

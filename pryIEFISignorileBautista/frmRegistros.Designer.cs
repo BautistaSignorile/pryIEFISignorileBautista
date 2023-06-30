@@ -43,6 +43,7 @@
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha_de_Registro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.btnListado = new System.Windows.Forms.Button();
             this.mrcCargarProducto.SuspendLayout();
             this.mrcListadoDeProducto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRegistro)).BeginInit();
@@ -128,10 +129,11 @@
             // 
             // mrcListadoDeProducto
             // 
+            this.mrcListadoDeProducto.Controls.Add(this.btnListado);
             this.mrcListadoDeProducto.Controls.Add(this.dtgvRegistro);
             this.mrcListadoDeProducto.Location = new System.Drawing.Point(12, 173);
             this.mrcListadoDeProducto.Name = "mrcListadoDeProducto";
-            this.mrcListadoDeProducto.Size = new System.Drawing.Size(432, 161);
+            this.mrcListadoDeProducto.Size = new System.Drawing.Size(432, 172);
             this.mrcListadoDeProducto.TabIndex = 1;
             this.mrcListadoDeProducto.TabStop = false;
             this.mrcListadoDeProducto.Text = "Listado de Producto";
@@ -158,7 +160,7 @@
             this.dtgvRegistro.MultiSelect = false;
             this.dtgvRegistro.Name = "dtgvRegistro";
             this.dtgvRegistro.RowHeadersVisible = false;
-            this.dtgvRegistro.Size = new System.Drawing.Size(420, 136);
+            this.dtgvRegistro.Size = new System.Drawing.Size(420, 108);
             this.dtgvRegistro.TabIndex = 0;
             this.dtgvRegistro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvRegistro_CellContentClick);
             // 
@@ -181,7 +183,7 @@
             // 
             this.btnVolver.BackColor = System.Drawing.Color.Goldenrod;
             this.btnVolver.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(12, 340);
+            this.btnVolver.Location = new System.Drawing.Point(12, 351);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 2;
@@ -189,12 +191,23 @@
             this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnListado
+            // 
+            this.btnListado.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnListado.Location = new System.Drawing.Point(351, 143);
+            this.btnListado.Name = "btnListado";
+            this.btnListado.Size = new System.Drawing.Size(75, 23);
+            this.btnListado.TabIndex = 1;
+            this.btnListado.Text = "Listado";
+            this.btnListado.UseVisualStyleBackColor = false;
+            this.btnListado.Click += new System.EventHandler(this.btnListado_Click);
+            // 
             // frmRegistros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.ClientSize = new System.Drawing.Size(456, 375);
+            this.ClientSize = new System.Drawing.Size(456, 386);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.mrcListadoDeProducto);
             this.Controls.Add(this.mrcCargarProducto);
@@ -228,5 +241,6 @@
         private System.Windows.Forms.DataGridView dtgvRegistro;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.Button btnListado;
     }
 }

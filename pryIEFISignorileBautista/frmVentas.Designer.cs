@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentas));
             this.mrcCargarVentas = new System.Windows.Forms.GroupBox();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.lblID = new System.Windows.Forms.Label();
             this.btnCargar = new System.Windows.Forms.Button();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -38,15 +40,13 @@
             this.lblFechaDeVenta = new System.Windows.Forms.Label();
             this.lblProducto = new System.Windows.Forms.Label();
             this.mrcRegistroVentas = new System.Windows.Forms.GroupBox();
+            this.btnListado = new System.Windows.Forms.Button();
             this.dtgvCargarVentas = new System.Windows.Forms.DataGridView();
-            this.btnVolver = new System.Windows.Forms.Button();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.lblID = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnListado = new System.Windows.Forms.Button();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.mrcCargarVentas.SuspendLayout();
             this.mrcRegistroVentas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCargarVentas)).BeginInit();
@@ -69,6 +69,23 @@
             this.mrcCargarVentas.TabIndex = 0;
             this.mrcCargarVentas.TabStop = false;
             this.mrcCargarVentas.Text = "Cargar Venta";
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(15, 32);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(222, 20);
+            this.txtID.TabIndex = 7;
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.Location = new System.Drawing.Point(13, 16);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(21, 13);
+            this.lblID.TabIndex = 6;
+            this.lblID.Text = "ID:";
             // 
             // btnCargar
             // 
@@ -144,6 +161,17 @@
             this.mrcRegistroVentas.TabStop = false;
             this.mrcRegistroVentas.Text = "Registro Venta";
             // 
+            // btnListado
+            // 
+            this.btnListado.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnListado.Location = new System.Drawing.Point(179, 201);
+            this.btnListado.Name = "btnListado";
+            this.btnListado.Size = new System.Drawing.Size(75, 23);
+            this.btnListado.TabIndex = 8;
+            this.btnListado.Text = "LISTADO";
+            this.btnListado.UseVisualStyleBackColor = false;
+            this.btnListado.Click += new System.EventHandler(this.btnListado_Click);
+            // 
             // dtgvCargarVentas
             // 
             this.dtgvCargarVentas.AllowUserToAddRows = false;
@@ -163,34 +191,6 @@
             this.dtgvCargarVentas.Size = new System.Drawing.Size(435, 179);
             this.dtgvCargarVentas.TabIndex = 0;
             this.dtgvCargarVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvCargarVentas_CellContentClick);
-            // 
-            // btnVolver
-            // 
-            this.btnVolver.BackColor = System.Drawing.Color.Goldenrod;
-            this.btnVolver.Location = new System.Drawing.Point(94, 219);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(75, 23);
-            this.btnVolver.TabIndex = 7;
-            this.btnVolver.Text = "VOLVER";
-            this.btnVolver.UseVisualStyleBackColor = false;
-            this.btnVolver.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(15, 32);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(222, 20);
-            this.txtID.TabIndex = 7;
-            // 
-            // lblID
-            // 
-            this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(13, 16);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(21, 13);
-            this.lblID.TabIndex = 6;
-            this.lblID.Text = "ID:";
             // 
             // ID
             // 
@@ -216,15 +216,16 @@
             this.Fecha.Name = "Fecha";
             this.Fecha.ReadOnly = true;
             // 
-            // btnListado
+            // btnVolver
             // 
-            this.btnListado.BackColor = System.Drawing.Color.Goldenrod;
-            this.btnListado.Location = new System.Drawing.Point(179, 201);
-            this.btnListado.Name = "btnListado";
-            this.btnListado.Size = new System.Drawing.Size(75, 23);
-            this.btnListado.TabIndex = 8;
-            this.btnListado.Text = "LISTADO";
-            this.btnListado.UseVisualStyleBackColor = false;
+            this.btnVolver.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnVolver.Location = new System.Drawing.Point(94, 219);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(75, 23);
+            this.btnVolver.TabIndex = 7;
+            this.btnVolver.Text = "VOLVER";
+            this.btnVolver.UseVisualStyleBackColor = false;
+            this.btnVolver.Click += new System.EventHandler(this.button2_Click);
             // 
             // frmVentas
             // 

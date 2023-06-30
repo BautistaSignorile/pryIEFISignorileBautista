@@ -12,6 +12,7 @@ namespace pryIEFISignorileBautista
 {
     public partial class frmPaginaPrincipal : Form
     {
+        public frmListado Listado = new frmListado();
         public frmPaginaPrincipal()
         {
             InitializeComponent();
@@ -27,6 +28,11 @@ namespace pryIEFISignorileBautista
         {
             Form Ventas = new frmVentas();
             Ventas.Show();
+
+        }
+
+        private void frmPaginaPrincipal_Load(object sender, EventArgs e)
+        {
 
         }
     }

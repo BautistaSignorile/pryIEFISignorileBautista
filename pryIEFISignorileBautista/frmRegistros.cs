@@ -12,6 +12,9 @@ namespace pryIEFISignorileBautista
 {
     public partial class frmRegistros : Form
     {
+        frmPaginaPrincipal objetoMain = new frmPaginaPrincipal();
+        int indiceFila = 0;
+
         public frmRegistros()
         {
             InitializeComponent();
@@ -34,6 +37,12 @@ namespace pryIEFISignorileBautista
                 dtgvRegistro.Rows[n].Cells[1].Value = txtNombreProducto.Text;
                 dtgvRegistro.Rows[n].Cells[2].Value = dtpFecha.Text;
 
+                objetoMain.Listado.matrizProducto[indiceFila, 0] = txtID.Text;
+                objetoMain.Listado.matrizProducto[indiceFila, 1] = txtNombreProducto.Text;
+                objetoMain.Listado.matrizProducto[indiceFila, 2] = dtpFecha.Text;
+
+                indiceFila++;
+
             }
             else
             {
@@ -51,6 +60,11 @@ namespace pryIEFISignorileBautista
         private void dtgvRegistro_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnListado_Click(object sender, EventArgs e)
+        {
+            objetoMain.Listado.Show();
         }
     }
 }

@@ -12,6 +12,8 @@ namespace pryIEFISignorileBautista
 {
     public partial class frmVentas : Form
     {
+        frmPaginaPrincipal  objetoMain = new frmPaginaPrincipal();
+        int Fila = 0;
         public frmVentas()
         {
             InitializeComponent();
@@ -39,6 +41,14 @@ namespace pryIEFISignorileBautista
                 dtgvCargarVentas.Rows[n].Cells[1].Value = txtCantidad.Text;
                 dtgvCargarVentas.Rows[n].Cells[2].Value = txtProduto.Text;
                 dtgvCargarVentas.Rows[n].Cells[3].Value = dtpFecha.Text;
+
+                objetoMain.Listado.matrizRegistro[Fila, 0] = txtID.Text;
+                objetoMain.Listado.matrizRegistro[Fila, 1] = txtCantidad.Text;
+                objetoMain.Listado.matrizRegistro[Fila, 2] = txtProduto.Text;
+                objetoMain.Listado.matrizRegistro[Fila, 3] = dtpFecha.Text;
+
+                Fila++;
+
             }
             else
             {
@@ -52,6 +62,11 @@ namespace pryIEFISignorileBautista
         private void dtgvCargarVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnListado_Click(object sender, EventArgs e)
+        {
+            objetoMain.Listado.Show();
         }
     }
 }
